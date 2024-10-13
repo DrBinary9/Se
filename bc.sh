@@ -34,7 +34,7 @@ run_test "1" "5 % 2"
 
 # Division by zero test (expect an error)
 division_by_zero=$(echo "scale=2; 1 / 0" | bc 2>&1)
-if [[ "$division_by_zero" == *"division by zero"* ]]; then
+if [[ "$division_by_zero" == *"Divide by zero"* ]]; then
     echo "Test passed: Division by zero correctly handled"
 else
     echo "Test failed: Division by zero not handled correctly"
